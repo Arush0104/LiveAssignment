@@ -1,0 +1,1 @@
+mongodb+srv://admin:123@login.nz2ualg.mongodb.net/?retryWrites=true&w=majority&appName=Login

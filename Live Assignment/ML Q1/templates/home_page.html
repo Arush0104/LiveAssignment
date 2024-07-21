@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushroom Classifier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="mb-4">
+            <h1>Mushroom Classification</h1>
+            <p class="lead text-muted">Using Machine Learning</p>
+        </header>
+
+        <section>
+            <h2>How to use this Model Effectively</h2>
+            <p class="lead">This project predicts whether a mushroom is poisonous or not based on various features.</p>
+            To use this, type in the respective observations in the input field
+            <br>Example:
+            <br>Lets say I found a mushroom with a cap the shape of a bell.<br>My input in the cap-shape field should be "b". "b" indicating Bell.
+            <br>You can describe more characteristcs and type it in from the guide below
+            <p><em>Note: Ensure that the information provided is accurate for correct predictions.</em></p>
+            <p>You can find the model <a href="/predict">here</a>.</p>
+        </section>
+
+        <section>
+            <h2>Information Guide</h2>
+            <ul>
+                <li><b>Cap Shape:</b> bell=b,conical=c,convex=x,flat=f, knobbed=k,sunken=s</li>
+                <li><b>Cap Surface:</b> fibrous=f,grooves=g,scaly=y,smooth=s</li>
+                <li><b>Cap Color:</b> brown=n,buff=b,cinnamon=c,gray=g,green=r,pink=p,purple=u,red=e,white=w,yellow=y</li>
+                <li><b>Bruises:</b>bruises=t,no=f</li>
+                <li><b>Odor:</b>almond=a,anise=l,creosote=c,fishy=y,foul=f,musty=m,none=n,pungent=p,spicy=s</li>
+                <li><b>Gill Attachment:</b>attached=a,descending=d,free=f,notched=n</li>
+                <li><b>Gill Spacing:</b>close=c,crowded=w,distant=d</li>
+                <li><b>Gill Size:</b>broad=b,narrow=n</li>
+                <li><b>Gill Color:</b>black=k,brown=n,buff=b,chocolate=h,gray=g, green=r,orange=o,pink=p,purple=u,red=e,white=w,yellow=y</li>
+                <li><b>Stalk Shape:</b>enlarging=e,tapering=t</li>
+                <li><b>Stalk Root:</b>bulbous=b,club=c,cup=u,equal=e,rhizomorphs=z,rooted=r,missing=?</li>
+                <li><b>Stalk Surface Above Ring:</b>fibrous=f,scaly=y,silky=k,smooth=s</li>
+                <li><b>Stalk Surface Below Ring:</b>fibrous=f,scaly=y,silky=k,smooth=s</li>
+                <li><b>Stalk Color Above Ring:</b>brown=n,buff=b,cinnamon=c,gray=g,orange=o,pink=p,red=e,white=w,yellow=y</li>
+                <li><b>Stalk Color Below Ring:</b>brown=n,buff=b,cinnamon=c,gray=g,orange=o,pink=p,red=e,white=w,yellow=y</li>
+                <li><b>Veil Type:</b>partial=p,universal=u</li>
+                <li><b>Veil Color:</b>brown=n,orange=o,white=w,yellow=y</li>
+                <li><b>Ring Number:</b>none=n,one=o,two=t</li>
+                <li><b>Ring Type:</b>cobwebby=c,evanescent=e,flaring=f,large=l,none=n,pendant=p,sheathing=s,zone=z</li>
+                <li><b>Spore Print Color:</b>black=k,brown=n,buff=b,chocolate=h,green=r,orange=o,purple=u,white=w,yellow=y</li>
+                <li><b>Population:</b>abundant=a,clustered=c,numerous=n,scattered=s,several=v,solitary=y</li>
+                <li><b>Habitat:</b>grasses=g,leaves=l,meadows=m,paths=p,urban=u,waste=w,woods=d</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>About the Machine Learning Model</h2>
+            <p>We employed Logistic Regression, suited for categorical data, achieving a 99.8% training accuracy. This indicates a strong fit with our dataset. Further testing with new data is essential for broader validation.</p>
+        </section>
+    </div>
+</body>
+</html>
